@@ -1,4 +1,4 @@
-import { displayChartForTime } from "/chart.js";
+import { displayChartForTime } from "./chart.js";
 import { displaySummary } from "./summary.js";
 import { displayStocksList } from "./stockList.js";
 
