@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Stock Market Analysis</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h1 id="heading">Stock Market Analysis</h1>
+        <div id="main" class="main">
+            <div id="stock_dets" class="stock_dets">
+                <div id="stock_chart" class="stock_chart">
+                    <div id="chart_display" class="chart_display">
+                        <canvas id="chartCanvas" width="600" height="400"></canvas>
+                        <div class="stock_value_label" id="stock_value_label"></div>
+                        <div class="timeLine" id="timeLine"></div>
+                    </div>
+                    <div id="chart_btns" class="chart_btns">
+                        <button class="btn1m" id="btn1m">1 Month</button>
+                        <button class="btn3m" id="btn3m">3 Months</button>
+                        <button class="btn1y" id="btn1y">1 Year</button>
+                        <button class="btn5y" id="btn5y">5 Years</button>
+                    </div>
+                </div>
+                <div id="stock_detail" class="stock_detail">
+                    <div id="current_stock_det">
+                        <div id="stockDetName" class="stockDetName"></div>
+                        <div id="bookDetValue" class="bookDetValue"></div>
+                        <div id="profitDet" class="profitDet"></div>
+                    </div>
+                    <div id="summary" class="summary"></div>
+                </div>
+            </div>
+            <div id="stock_list_section" class="stock_list_section">
+                <ul class="stock_list" id="stock_list"></ul>
+            </div>
+        </div>
+    </body>
+    <script type="module" src="script.js"></script>
+</html>

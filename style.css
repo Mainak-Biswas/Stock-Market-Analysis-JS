@@ -1,0 +1,147 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(45deg, rgb(3, 61, 116), rgb(14, 19, 15));
+    background-attachment: fixed;
+    color: rgb(255, 255, 255);
+    margin: 0px;
+}
+
+/* Heading "Stock Market Analysis" */
+#heading {
+    display: block;
+    text-align: center;
+    margin: 35px auto;
+}
+
+/* Main is divided into 2 parts "Stock List" and "Stock Details */
+.main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Stock List Section */
+.stock_list_section {
+    width: 30%;
+    flex-grow: 1;
+    min-width: max-content;
+}
+.stock_list {
+    list-style: none;
+    width: max-content;
+    margin: auto;
+}
+
+.stock_list li {
+    padding: 5px;
+    margin-bottom: 5px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.stock_list li span {
+    display: block;
+    justify-content: left;
+    margin-left: 20px;
+}
+
+.bookValue {
+    width: 20%;
+}
+
+.stock_list_btn {
+    width: 60px;
+    padding: 5px;
+}
+
+/* Stock Det section divided into 2 parts "Chart" and "Details */
+.stock_dets {
+    width: 70%;
+    flex-grow: 1;
+    min-width: min-content;
+}
+
+/* Chart  */
+.stock_chart {
+    background-color: #0c1d21;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chart_display {
+    margin: 10px;
+}
+
+#stock_value_label {
+    display: none;
+    position: absolute;
+    font-size: small;
+    padding: 2px 10px;
+    border-radius: 5px;
+    background: blue;
+}
+
+#timeLine {
+    position: absolute;
+    margin-top: -40px;
+}
+
+.stock_detail {
+    padding: 20px;
+}
+
+/* Details part */
+#current_stock_det {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: baseline;
+    padding: 10px 0px;
+}
+#current_stock_det div {
+    margin-right: 20px;
+}
+
+.stockDetName {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.summary {
+    font-size: 13px;
+    text-align: justify;
+}
+
+/*All Buttons have same CSS*/
+
+button {
+    padding: 10px;
+    margin: 0px 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: dsmall;
+    font-weight: bold;
+    background-color: rgb(5, 67, 108);
+    border: none;
+}
+
+.activeBtn {
+    background-color: rgb(0, 207, 138);
+}
+
+/* Loading */
+
+#loading {
+    background-image: inherit;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
